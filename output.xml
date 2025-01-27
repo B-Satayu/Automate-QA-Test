@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-01-27T16:10:24.430789" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase" source="c:\Users\User\OneDrive\เอกสาร\Automate QA Test\Testcase.robot">
+<test id="s1-t1" name="Test Website" line="10">
+<kw name="Enter to the Website" owner="Source">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-27T16:10:24.577963" level="INFO">Opening browser 'Chrome' to base url 'https://xn--m3ca1athe9asc7b2b6iqe.com/'.</msg>
+<arg>${Homepage}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-27T16:10:24.576967" elapsed="1.448951"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.026915" elapsed="0.063786"/>
+</kw>
+<status status="PASS" start="2025-01-27T16:10:24.576967" elapsed="1.513734"/>
+</kw>
+<kw name="Navigate How to Use" owner="Source">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath = //*[@id="__next"]/main/div/div[3]/div/div/button[7]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.091698" elapsed="0.373543"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-27T16:10:26.465241" level="INFO">Clicking button 'xpath = //*[@id="__next"]/main/div/div[3]/div/div/button[7]'.</msg>
+<arg>xpath = //*[@id="__next"]/main/div/div[3]/div/div/button[7]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.465241" elapsed="0.076256"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-01-27T16:10:26.608789" level="INFO">Element 'xpath = //*[@id="__next"]/main/div/div[1]/div[1]' is displayed.</msg>
+<arg>xpath = //*[@id="__next"]/main/div/div[1]/div[1]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.541497" elapsed="0.067292"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath = //*[@id="__next"]/main/div/div[1]/div[2]/div[2]/div/button[7]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.609785" elapsed="0.013983"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-27T16:10:26.624765" level="INFO">Clicking element 'xpath = //*[@id="__next"]/main/div/div[1]/div[2]/div[2]/div/button[7]'.</msg>
+<arg>xpath = //*[@id="__next"]/main/div/div[1]/div[2]/div[2]/div/button[7]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.623768" elapsed="0.053820"/>
+</kw>
+<status status="PASS" start="2025-01-27T16:10:26.091698" elapsed="0.586888"/>
+</kw>
+<kw name="Back to homepage" owner="Source">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-27T16:10:26.679582" level="INFO">Clicking button 'xpath = //*[@id="__next"]/nav/button'.</msg>
+<arg>xpath = //*[@id="__next"]/nav/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.678586" elapsed="0.204020"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-01-27T16:10:26.907526" level="INFO">${url} = https://xn--m3ca1athe9asc7b2b6iqe.com/</msg>
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.883603" elapsed="0.023923"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>${Homepage}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.907526" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2025-01-27T16:10:26.678586" elapsed="0.229936"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-27T16:10:29.909554" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-27T16:10:26.908522" elapsed="3.001032"/>
+</kw>
+<status status="PASS" start="2025-01-27T16:10:24.576967" elapsed="5.332587"/>
+</test>
+<doc>This is an automate test script for Jr.QA Position</doc>
+<status status="PASS" start="2025-01-27T16:10:24.433779" elapsed="5.476774"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
